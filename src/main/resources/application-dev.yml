@@ -1,0 +1,26 @@
+server:
+  port: 8905
+spring:
+  application:
+    name: xie-cms-api
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xie?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: xie
+    password: xie1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  session:
+    store-type: redis
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    database: 1
+    password: 1234
+    port: 6379
+    host: 192.168.1.208
+    timeout: 5000
+#  redis:
+#    database: 1
+#    password: 1234
+#    port: 6379
+#    host: 192.168.1.208
+#    timeout: 5000
